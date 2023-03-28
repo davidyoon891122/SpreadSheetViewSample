@@ -12,9 +12,12 @@
 		49AE179529D29572004FA19A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49AE179429D29572004FA19A /* ViewController.swift */; };
 		49AE179A29D29575004FA19A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49AE179929D29575004FA19A /* Assets.xcassets */; };
 		49AE179D29D29575004FA19A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49AE179B29D29575004FA19A /* LaunchScreen.storyboard */; };
+		49AE17A729D29741004FA19A /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 49AE17A629D29741004FA19A /* SnapKit */; };
+		6DFE91DA8125C5B2D3E67737 /* Pods_SpreadsheetViewSample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A95024830FE20988D2F92796 /* Pods_SpreadsheetViewSample.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		042B0957CA63E2A6577119E4 /* Pods-SpreadsheetViewSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpreadsheetViewSample.release.xcconfig"; path = "Target Support Files/Pods-SpreadsheetViewSample/Pods-SpreadsheetViewSample.release.xcconfig"; sourceTree = "<group>"; };
 		49AE178D29D29572004FA19A /* SpreadsheetViewSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpreadsheetViewSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		49AE179029D29572004FA19A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		49AE179229D29572004FA19A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -22,6 +25,8 @@
 		49AE179929D29575004FA19A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		49AE179C29D29575004FA19A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		49AE179E29D29575004FA19A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		79E2D064AC1E9A79E5C4C3F7 /* Pods-SpreadsheetViewSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpreadsheetViewSample.debug.xcconfig"; path = "Target Support Files/Pods-SpreadsheetViewSample/Pods-SpreadsheetViewSample.debug.xcconfig"; sourceTree = "<group>"; };
+		A95024830FE20988D2F92796 /* Pods_SpreadsheetViewSample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SpreadsheetViewSample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +34,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6DFE91DA8125C5B2D3E67737 /* Pods_SpreadsheetViewSample.framework in Frameworks */,
+				49AE17A729D29741004FA19A /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		01F601C5384FD451667703AA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				79E2D064AC1E9A79E5C4C3F7 /* Pods-SpreadsheetViewSample.debug.xcconfig */,
+				042B0957CA63E2A6577119E4 /* Pods-SpreadsheetViewSample.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		49AE178429D29572004FA19A = {
 			isa = PBXGroup;
 			children = (
 				49AE178F29D29572004FA19A /* SpreadsheetViewSample */,
 				49AE178E29D29572004FA19A /* Products */,
+				01F601C5384FD451667703AA /* Pods */,
+				7F003BD1556F3E5DB44CE8D6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -72,6 +90,14 @@
 			path = Delegate;
 			sourceTree = "<group>";
 		};
+		7F003BD1556F3E5DB44CE8D6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A95024830FE20988D2F92796 /* Pods_SpreadsheetViewSample.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -79,15 +105,20 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 49AE17A129D29575004FA19A /* Build configuration list for PBXNativeTarget "SpreadsheetViewSample" */;
 			buildPhases = (
+				9E2F054F89A618BDA9F158EB /* [CP] Check Pods Manifest.lock */,
 				49AE178929D29572004FA19A /* Sources */,
 				49AE178A29D29572004FA19A /* Frameworks */,
 				49AE178B29D29572004FA19A /* Resources */,
+				C57E53A1B682E4437D9D39B2 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = SpreadsheetViewSample;
+			packageProductDependencies = (
+				49AE17A629D29741004FA19A /* SnapKit */,
+			);
 			productName = SpreadsheetViewSample;
 			productReference = 49AE178D29D29572004FA19A /* SpreadsheetViewSample.app */;
 			productType = "com.apple.product-type.application";
@@ -116,6 +147,9 @@
 				Base,
 			);
 			mainGroup = 49AE178429D29572004FA19A;
+			packageReferences = (
+				49AE17A529D29741004FA19A /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
 			productRefGroup = 49AE178E29D29572004FA19A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -136,6 +170,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9E2F054F89A618BDA9F158EB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SpreadsheetViewSample-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C57E53A1B682E4437D9D39B2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SpreadsheetViewSample/Pods-SpreadsheetViewSample-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SpreadsheetViewSample/Pods-SpreadsheetViewSample-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SpreadsheetViewSample/Pods-SpreadsheetViewSample-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		49AE178929D29572004FA19A /* Sources */ = {
@@ -278,6 +354,7 @@
 		};
 		49AE17A229D29575004FA19A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 79E2D064AC1E9A79E5C4C3F7 /* Pods-SpreadsheetViewSample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -306,6 +383,7 @@
 		};
 		49AE17A329D29575004FA19A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 042B0957CA63E2A6577119E4 /* Pods-SpreadsheetViewSample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -354,6 +432,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		49AE17A529D29741004FA19A /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				branch = develop;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		49AE17A629D29741004FA19A /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 49AE17A529D29741004FA19A /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 49AE178529D29572004FA19A /* Project object */;
 }
