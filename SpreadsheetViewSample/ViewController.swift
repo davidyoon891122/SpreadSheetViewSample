@@ -26,7 +26,7 @@ class ViewController: UIViewController {
 
 extension ViewController: SpreadsheetViewDataSource {
     func spreadsheetView(_ spreadsheetView: SpreadsheetView, widthForColumn column: Int) -> CGFloat {
-        return 80
+        return UIScreen.main.bounds.width / 7
     }
     
     func spreadsheetView(_ spreadsheetView: SpreadsheetView, heightForRow row: Int) -> CGFloat {
@@ -34,11 +34,19 @@ extension ViewController: SpreadsheetViewDataSource {
     }
     
     func numberOfColumns(in spreadsheetView: SpreadsheetView) -> Int {
-        return 3
+        return 7
     }
     
     func numberOfRows(in spreadsheetView: SpreadsheetView) -> Int {
-        return 2
+        return 20
+    }
+    
+    func mergedCells(in spreadsheetView: SpreadsheetView) -> [CellRange] {
+        return [
+            CellRange(from: IndexPath(row: 0, column: 0), to: IndexPath(row: 19, column: 1)),
+            
+            CellRange(from: IndexPath(row: 0, column: 5), to: IndexPath(row: 19, column: 6)),
+        ]
     }
 }
 
